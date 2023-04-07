@@ -21,8 +21,16 @@ class Main {
         System.out.println("Please insert password here");
 
         String Password = passCheck.nextLine();
-        System.out.println("Your password is" + Password);
+        System.out.println("Your password is " + Password);
        
     }
 }
+
+/* Class code
+
+    - Line 20 scanner util has been used and I have created an object called "Pass Check", this object is where I have created my Input.
+    - Line 21 Prints out text for my object, directing the user to the input within the terminal or console. 
+    - Line 23 I create a new string called password that takes the input from my passCheck object, and this is then passed out into line 24 and printed for the user to see. 
+ 
+ */
  
