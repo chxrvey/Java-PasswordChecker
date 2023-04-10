@@ -10,9 +10,20 @@
     
  */
 
+ import java.util.regex.Matcher;
+ import java.util.regex.Pattern;
 
 public class Criteria1 {
 
     
     
 }
+
+
+/* if (passCheck.length( >= 8)) {
+    system.out.println("Your password strength is good!")
+} elseif (passCheck) {}
+
+
+
+*/
