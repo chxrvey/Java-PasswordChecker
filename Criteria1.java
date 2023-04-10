@@ -13,17 +13,33 @@
  import java.util.regex.Matcher;
  import java.util.regex.Pattern;
 
-public class Criteria1 {
 
-    
-    
-}
+    public class Criteria1 {
+        public static void main(String[] args) {
+           
+           Pattern pattern = pattern.compile("#$%&"); 
+           Matcher matcher = pattern.matcher("passCheck");
+   
+   
+           if (matcher.find() && "passCheck".length() >= 8 ){
+               System.out.println("Your password is good");
+           } else if ("passCheck".length() >= 8) {
+               System.out.println("Your password has no special characters");
+           }
+           else {
+               System.out.println("Your password is not sufficient, please update this.");
+           }
+       } 
+   
+       
+       
+       
+   }
+   
 
+/*  
+   Line 20, I am using the utility import to recognise special characters that can be used within the password.
+   Line 21 I am using the match util to look at the input from the password and registering again the pattern.
 
-/* if (passCheck.length( >= 8)) {
-    system.out.println("Your password strength is good!")
-} elseif (passCheck) {}
-
-
-
-*/
+   The code bliock from 24 to 29 is a conditional block for the good criteria with checks that will occur. 
+ */
