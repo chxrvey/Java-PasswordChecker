@@ -10,14 +10,18 @@
     
  */
 
+ import java.util.Scanner;
  import java.util.regex.Matcher;
  import java.util.regex.Pattern;
 
 
     public class Criteria1 {
+        public Criteria1(String password) {
+        }
+
         public static void main(String[] args) {
            
-           Pattern pattern = pattern.compile("#$%&"); 
+           Pattern pattern = Pattern.compile("[^a-zA-Z0-9]{2,}"); 
            Matcher matcher = pattern.matcher("passCheck");
    
    

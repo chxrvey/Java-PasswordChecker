@@ -17,11 +17,13 @@
 
 class Main {
     public static void main(String[]    args) {
-        Scanner passCheck = new Scanner(System.in); 
-        System.out.println("Please insert password here");
+        try (Scanner passCheck = new Scanner(System.in)) {
+            System.out.println("Please insert password here");
 
-        String Password = passCheck.nextLine();
-        System.out.println("Your password is " + Password);
+            String Password = passCheck.nextLine();
+            System.out.println("Your password is " + Password);
+
+        } 
        
     }
 }
