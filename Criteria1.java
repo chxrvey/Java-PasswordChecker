@@ -20,22 +20,17 @@
 
         public static void main(String[] args) {
            
-           Pattern pattern = Pattern.compile("[^a-zA-Z0-9]{2,}"); 
-           Matcher matcher = pattern.matcher("Password");
+           Pattern pattern = Pattern.compile("^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[^a-zA-Z0-9]).{8,}$"); 
+           Matcher matcher = pattern.matcher("passCheck");
    
    
-           if (matcher.find() && "passCheck".length() <= 8 ){
+           if (matcher.matches()){
                System.out.println("Your password is good");
-           } else if ("passCheck".length() >= 8) {
-               System.out.println("Your password has no special characters");
-           }
+           } 
            else {
                System.out.println("Your password is not sufficient, please update this.");
            }
        } 
-   
-       
-       
        
    }
    

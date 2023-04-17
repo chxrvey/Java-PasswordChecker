@@ -23,9 +23,9 @@ public class Critera2 {
 
 
 
-        if (matcher.find() && "passCheck".length() >= 14 ){
+        if (matcher.matches() && "passCheck".length() >= 14 ){
             System.out.println("Your password is good");
-        } else if ("passCheck".length() >= 14) {
+        } else if (matcher.matches()) {
             System.out.println("Your password has no special characters");
         }
         else {
