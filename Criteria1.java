@@ -10,7 +10,6 @@
     
  */
 
- import java.util.Scanner;
  import java.util.regex.Matcher;
  import java.util.regex.Pattern;
 
@@ -22,10 +21,10 @@
         public static void main(String[] args) {
            
            Pattern pattern = Pattern.compile("[^a-zA-Z0-9]{2,}"); 
-           Matcher matcher = pattern.matcher("passCheck");
+           Matcher matcher = pattern.matcher("Password");
    
    
-           if (matcher.find() && "passCheck".length() >= 8 ){
+           if (matcher.find() && "passCheck".length() <= 8 ){
                System.out.println("Your password is good");
            } else if ("passCheck".length() >= 8) {
                System.out.println("Your password has no special characters");
